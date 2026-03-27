@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sua Idade Musical</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1db954, #121212);
+  color: white;
+  text-align: center;
+}
+
+/* Botão voltar */
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.voltar a {
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Conteúdo */
+.container {
+  margin-top: 100px;
+}
+
+select, button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background: #1db954;
+  color: white;
+  cursor: pointer;
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #1db954;
+}
+</style>
+</head>
+
+<body>
+
+<div class="voltar">
+  <a href="layoutmusic.html">⬅ Voltar</a>
+</div>
+
+<div class="container">
+  <h1>🎧 Descubra sua Idade Musical</h1>
+  <p>Escolha seus gostos musicais:</p>
+
+  <select id="genero">
+    <option value="0">Selecione um gênero</option>
+    <option value="60">Rock clássico</option>
+    <option value="50">MPB</option>
+    <option value="30">Pop</option>
+    <option value="25">Funk</option>
+    <option value="20">Trap/Rap</option>
+    <option value="40">Eletrônica</option>
+  </select>
+
+  <select id="frequencia">
+    <option value="0">Com que frequência você ouve música?</option>
+    <option value="10">O tempo todo</option>
+    <option value="5">Todo dia</option>
+    <option value="0">Às vezes</option>
+  </select>
+
+  <br>
+
+  <button onclick="calcularIdade()">Calcular</button>
+
+  <div class="resultado" id="resultado"></div>
+</div>
+
+<script>
+function calcularIdade() {
+  let genero = parseInt(document.getElementById("genero").value);
+  let frequencia = parseInt(document.getElementById("frequencia").value);
+
+  if (genero === 0) {
+    document.getElementById("resultado").innerText = "Escolha um gênero musical!";
+    return;
+  }
+
+  let idade = genero - frequencia;
+
+  document.getElementById("resultado").innerText = 
+    "Sua idade musical é: " + idade + " anos 🎶";
+}
+</script>
+
+</body>
+</html>

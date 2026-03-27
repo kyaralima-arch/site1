@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Planos de Assinatura</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: white;
+  text-align: center;
+}
+
+/* Botão voltar */
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.voltar a {
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Título */
+h1 {
+  margin-top: 80px;
+}
+
+/* Cards */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: #181818;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.preco {
+  font-size: 28px;
+  color: #1db954;
+}
+
+button {
+  background: #1db954;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #17a74a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="voltar">
+  <a href="layoutmusic.html">⬅ Voltar</a>
+</div>
+
+<h1>🎧 Escolha seu Plano</h1>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Gratuito</h2>
+    <p class="preco">R$ 0</p>
+    <p>Anúncios</p>
+    <p>Pular limitado</p>
+    <p>Qualidade padrão</p>
+    <button>Selecionar</button>
+  </div>
+
+  <div class="card">
+    <h2>Premium</h2>
+    <p class="preco">R$ 19,90/mês</p>
+    <p>Sem anúncios</p>
+    <p>Pular ilimitado</p>
+    <p>Alta qualidade</p>
+    <button>Assinar</button>
+  </div>
+
+  <div class="card">
+    <h2>Família</h2>
+    <p class="preco">R$ 29,90/mês</p>
+    <p>Até 6 contas</p>
+    <p>Sem anúncios</p>
+    <p>Alta qualidade</p>
+    <button>Assinar</button>
+  </div>
+
+</div>
+
+</body>
+</html>

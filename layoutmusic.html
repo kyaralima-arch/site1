@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>layout responsivo</title>
+
+<style> 
+*{box-sizing: border-box;}
+
+body{
+    margin: 0;
+}
+
+/* BOTÕES */
+.botao {
+    display: inline-block;
+    background: #1db954;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #17a74a;
+    transform: scale(1.05);
+}
+
+.cabecalho{
+    padding: 16px;
+    background-color: #87cefa;
+}
+
+/* Layout desktop */
+.container{
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.esquerda, .direita{
+    width: 250px;
+    padding: 12px;
+    background-color: #b0e0e6;
+}
+
+.principal{
+    width: 850px;
+    padding: 12px;
+    background: #e8f6ff;
+    flex: 1;
+}
+
+/* Tablet */
+@media(max-width: 900px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .esquerda{
+        width: 150px;
+    }
+    .principal{
+        width: auto;
+    }
+    .direita{
+        width: 100%;
+    }
+}
+
+/* Celular */
+@media (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    .esquerda, .principal, .direita{
+        width: 100%;
+    }
+}
+
+.rodape{
+    padding: 16px;
+    background: #e0ffff;
+    margin-top: 8px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="cabecalho">
+<img src="imagens/musica.png" width="90px">
+<strong>kymusic</strong> 
+</div>
+
+<div class="container">
+
+<div class="esquerda">
+<strong>menu</strong>
+<p> <!DOCTYPE html>
+<html>
+<style>
+body {
+  font-size: 20px;
+}
+</style>
+<body>
+</body>
+</html>
+ 
+<html>
+<style>
+body {
+  font-size: 20px;
+}
+</style>
+<body>
+
+<span style='font-size:20px;'>&#127968;</span>
+</body>
+</html>
+Início</p>
+<p> <!DOCTYPE html>
+<html>
+<style>
+body {
+  font-size: 20px;
+}
+</style>
+<body>
+
+<span style='font-size:20px;'>&#128194;</span>
+</body>
+</html>
+Biblioteca</p>
+
+ <!DOCTYPE html>
+<html>
+<style>
+body {
+  font-size: 20px;
+}
+</style>
+<body>
+
+<span style='font-size:20px;'>&#128270;</span>
+</body>
+</html>
+Buscar</p>
+</div>
+
+<div class="principal">
+<strong>conteúdo principal</strong>
+<p>Um site de música, onde você irá encontrar todos os gêneros de músicas.</p>
+<p>sinta o melhor que a música tem a oferecer.</p>
+</div>
+
+<div class="direita">
+<strong>informações</strong>
+<div>kymusic premium</div>
+<div> Retrospectiva</div>
+<div> Idade musical </div>
+
+</div>
+</div>
+
+<div class="cabecalho">
+<img src="imagens/retrospectiva.webp" width="120px">
+<strong>Saiba tudo o que você ouviu durante seu ano</strong><br>
+
+<a href="retrospectiva.html" class="botao">Retrospectiva</a>
+</div>
+
+<div class="cabecalho">
+<strong>Veja quais foram suas músicas favoritas</strong><br>
+
+<a href="musicasmaisouvidas.html" class="botao">Músicas mais ouvidas</a>
+</div>
+
+<div class="cabecalho">
+<strong>Descubra sua idade musical conforme seus gostos</strong><br>
+
+<a href="idademusical.html" class="botao"> <!DOCTYPE html>
+<html>
+<style>
+body {
+  font-size: 20px;
+}
+</style>
+<body>
+
+<span style='font-size:20px;'>&#127911;</span>
+</body>
+</html>
+Idade Musical</a>
+</div>
+
+<div class="cabecalho">
+<strong>Escolha o melhor plano para você</strong><br>
+
+<a href="planosmusicais.html" class="botao">Planos</a>
+</div>
+
+<div class="rodape">
+📞 (49) 9993-212-82 | 📷 @kymusic_01
+</div>
+
+</body>
+</html>

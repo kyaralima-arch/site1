@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Layout responsivo</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            margin: 0;
+        }
+
+        .cabecalho{
+            padding: 16px;
+            background-color: #cccccc;
+        }
+
+        .container{
+            display: flex;
+            max-widht: 980px;
+            margin: 0 auto;
+            padding: 16;
+        }
+
+        .esquerda, .direita{
+            width: 150px;
+            padding: 12px;
+            background-color: #f2f2f2;
+        }
+
+        .principal{
+            width: 450px;
+            padding: 12px;
+            background: #e8f6ff;
+            flex: 1;
+            min-widht: 0;
+        }
+
+ /***Layout padrão para desktop ***/
+        .container{
+            display: flex;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 16;
+        }
+
+        .esquerda, .direita{
+            width: 150px;
+            padding: 12px;
+            background-color: #f2f2f2;
+        }
+
+        .principal{
+            width: 450px;
+            padding: 12px;
+            background: #e8f6ff;
+            flex: 1;
+            min-width: 0;
+        }
+        /*** Layout para tablets ***/
+
+        @media(max-width: 900px){
+            .container{
+                flex-wrap: wrap;
+            }
+            .esquerda{
+                width: 150px;
+                flex: 0 0 150;
+            }
+            .principal{
+                flex: 1 1 0;
+                width: auto;
+                min-width: 280px;
+            }
+            .direita{
+                width: 100%;
+                flex: 0 0 100;
+            }
+            }  
+            /*** layout para dispositivos móveis (celulares) ***/
+            @media (max-width: : 600px){
+            .container{
+                flex-direction:column;
+            }
+            .esquerda, .principal, .direita{
+                widht:100%;
+                flex: 0 0 auto;
+            }
+            }  
+
+            .rodape{
+                padding: 16px;]
+                background: #cccccc;
+                margin-top: 8px;
+            } 
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+       <strong>cabeçalho</strong> - logo | menu
+    </div>
+
+    <div class="container">
+        <div class="esquerda">
+            <strong>coluna esquerda</strong>
+            <div>menu</div>
+            <div>links</div>
+            <div>seções</div>
+        </div>
+        <div class="principal">
+            <strong>conteúdo principal</strong>
+            <p>Aqui virá o conteudo principal do site do cliente. A proposta é que
+             o site seja responsivo, ou seja: que se ajuste automaticamente.</p>
+             <p>realize o teste de redimensionamento do navegador.</p>
+        </div>
+        <div class="direita">
+            <strong>coluna direita</strong>
+            <div>Widgets</div>
+            <div>banner</div>
+            <div>infos</div>
+        </div>
+    </div>
+
+    <div class="rodape">
+        rodapé - contato | endereço | redes sociais 
+    </div>
+
+</body>
+</html>
